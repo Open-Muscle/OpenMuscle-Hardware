@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "CharginCircuitFootprintLibrary")(type "KiCad")(uri "${KIPRJMOD}/CharginCircuitFootprintLibrary.pretty")(options "")(descr ""))
+)
