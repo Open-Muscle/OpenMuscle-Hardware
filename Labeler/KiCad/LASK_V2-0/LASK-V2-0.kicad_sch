@@ -775,11 +775,11 @@
         )
       )
     )
-    (symbol "Connector:USB_C_Plug_USB2.0" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "P" (at -10.16 19.05 0)
+    (symbol "Connector:USB_C_Receptacle" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at -10.16 29.21 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "USB_C_Plug_USB2.0" (at 12.7 19.05 0)
+      (property "Value" "USB_C_Receptacle" (at 10.16 29.21 0)
         (effects (font (size 1.27 1.27)) (justify right))
       )
       (property "Footprint" "" (at 3.81 0 0)
@@ -788,17 +788,49 @@
       (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 3.81 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "usb universal serial bus type-C USB2.0" (at 0 0 0)
+      (property "ki_keywords" "usb universal serial bus type-C full-featured" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "USB 2.0-only Type-C Plug connector" (at 0 0 0)
+      (property "ki_description" "USB Full-Featured Type-C Receptacle connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "USB*C*Plug*" (at 0 0 0)
+      (property "ki_fp_filters" "USB*C*Receptacle*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "USB_C_Plug_USB2.0_0_0"
-        (rectangle (start -0.254 -17.78) (end 0.254 -16.764)
+      (symbol "USB_C_Receptacle_0_0"
+        (rectangle (start -0.254 -35.56) (end 0.254 -34.544)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -32.766) (end 9.144 -33.274)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -30.226) (end 9.144 -30.734)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -25.146) (end 9.144 -25.654)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -22.606) (end 9.144 -23.114)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -17.526) (end 9.144 -18.034)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -14.986) (end 9.144 -15.494)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -9.906) (end 9.144 -10.414)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 -7.366) (end 9.144 -7.874)
           (stroke (width 0) (type default))
           (fill (type none))
         )
@@ -806,7 +838,11 @@
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (rectangle (start 10.16 2.794) (end 9.144 2.286)
+        (rectangle (start 10.16 0.254) (end 9.144 -0.254)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 5.334) (end 9.144 4.826)
           (stroke (width 0) (type default))
           (fill (type none))
         )
@@ -818,13 +854,25 @@
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (rectangle (start 10.16 15.494) (end 9.144 14.986)
+        (rectangle (start 10.16 12.954) (end 9.144 12.446)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 18.034) (end 9.144 17.526)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 20.574) (end 9.144 20.066)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 10.16 25.654) (end 9.144 25.146)
           (stroke (width 0) (type default))
           (fill (type none))
         )
       )
-      (symbol "USB_C_Plug_USB2.0_0_1"
-        (rectangle (start -10.16 17.78) (end 10.16 -17.78)
+      (symbol "USB_C_Receptacle_0_1"
+        (rectangle (start -10.16 27.94) (end 10.16 -35.56)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
@@ -856,14 +904,6 @@
           (stroke (width 0.508) (type default))
           (fill (type none))
         )
-        (circle (center -2.54 1.143) (radius 0.635)
-          (stroke (width 0.254) (type default))
-          (fill (type outline))
-        )
-        (circle (center 0 -5.842) (radius 1.27)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
         (polyline
           (pts
             (xy -8.89 -3.81)
@@ -879,6 +919,16 @@
           )
           (stroke (width 0.508) (type default))
           (fill (type none))
+        )
+      )
+      (symbol "USB_C_Receptacle_1_1"
+        (circle (center -2.54 1.143) (radius 0.635)
+          (stroke (width 0.254) (type default))
+          (fill (type outline))
+        )
+        (circle (center 0 -5.842) (radius 1.27)
+          (stroke (width 0) (type default))
+          (fill (type outline))
         )
         (polyline
           (pts
@@ -920,57 +970,103 @@
           (stroke (width 0.254) (type default))
           (fill (type outline))
         )
-      )
-      (symbol "USB_C_Plug_USB2.0_1_1"
-        (pin passive line (at 0 -22.86 90) (length 5.08)
+        (pin passive line (at 0 -40.64 90) (length 5.08)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "A1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 0 -22.86 90) (length 5.08) hide
+        (pin bidirectional line (at 15.24 -15.24 180) (length 5.08)
+          (name "RX2-" (effects (font (size 1.27 1.27))))
+          (number "A10" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -17.78 180) (length 5.08)
+          (name "RX2+" (effects (font (size 1.27 1.27))))
+          (number "A11" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -40.64 90) (length 5.08) hide
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "A12" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 15.24 15.24 180) (length 5.08)
+        (pin bidirectional line (at 15.24 -10.16 180) (length 5.08)
+          (name "TX1+" (effects (font (size 1.27 1.27))))
+          (number "A2" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -7.62 180) (length 5.08)
+          (name "TX1-" (effects (font (size 1.27 1.27))))
+          (number "A3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 15.24 25.4 180) (length 5.08)
           (name "VBUS" (effects (font (size 1.27 1.27))))
           (number "A4" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at 15.24 10.16 180) (length 5.08)
-          (name "CC" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at 15.24 20.32 180) (length 5.08)
+          (name "CC1" (effects (font (size 1.27 1.27))))
           (number "A5" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at 15.24 -2.54 180) (length 5.08)
+        (pin bidirectional line (at 15.24 7.62 180) (length 5.08)
           (name "D+" (effects (font (size 1.27 1.27))))
           (number "A6" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at 15.24 2.54 180) (length 5.08)
+        (pin bidirectional line (at 15.24 12.7 180) (length 5.08)
           (name "D-" (effects (font (size 1.27 1.27))))
           (number "A7" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 15.24 15.24 180) (length 5.08) hide
+        (pin bidirectional line (at 15.24 -30.48 180) (length 5.08)
+          (name "SBU1" (effects (font (size 1.27 1.27))))
+          (number "A8" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 15.24 25.4 180) (length 5.08) hide
           (name "VBUS" (effects (font (size 1.27 1.27))))
           (number "A9" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 0 -22.86 90) (length 5.08) hide
+        (pin passive line (at 0 -40.64 90) (length 5.08) hide
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "B1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 0 -22.86 90) (length 5.08) hide
+        (pin bidirectional line (at 15.24 0 180) (length 5.08)
+          (name "RX1-" (effects (font (size 1.27 1.27))))
+          (number "B10" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -2.54 180) (length 5.08)
+          (name "RX1+" (effects (font (size 1.27 1.27))))
+          (number "B11" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -40.64 90) (length 5.08) hide
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "B12" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 15.24 15.24 180) (length 5.08) hide
+        (pin bidirectional line (at 15.24 -25.4 180) (length 5.08)
+          (name "TX2+" (effects (font (size 1.27 1.27))))
+          (number "B2" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -22.86 180) (length 5.08)
+          (name "TX2-" (effects (font (size 1.27 1.27))))
+          (number "B3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 15.24 25.4 180) (length 5.08) hide
           (name "VBUS" (effects (font (size 1.27 1.27))))
           (number "B4" (effects (font (size 1.27 1.27))))
         )
-        (pin bidirectional line (at 15.24 7.62 180) (length 5.08)
-          (name "VCONN" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at 15.24 17.78 180) (length 5.08)
+          (name "CC2" (effects (font (size 1.27 1.27))))
           (number "B5" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 15.24 15.24 180) (length 5.08) hide
+        (pin bidirectional line (at 15.24 5.08 180) (length 5.08)
+          (name "D+" (effects (font (size 1.27 1.27))))
+          (number "B6" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 10.16 180) (length 5.08)
+          (name "D-" (effects (font (size 1.27 1.27))))
+          (number "B7" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -33.02 180) (length 5.08)
+          (name "SBU2" (effects (font (size 1.27 1.27))))
+          (number "B8" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 15.24 25.4 180) (length 5.08) hide
           (name "VBUS" (effects (font (size 1.27 1.27))))
           (number "B9" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -7.62 -22.86 90) (length 5.08)
+        (pin passive line (at -7.62 -40.64 90) (length 5.08)
           (name "SHIELD" (effects (font (size 1.27 1.27))))
           (number "S1" (effects (font (size 1.27 1.27))))
         )
@@ -1997,10 +2093,6 @@
     (stroke (width 0) (type default))
     (uuid 11e264cb-f74b-4f0f-b4e6-d7301eee5860)
   )
-  (wire (pts (xy 123.19 158.75) (xy 129.54 158.75))
-    (stroke (width 0) (type default))
-    (uuid 14e7d762-e07d-4a0f-9cc6-6f8c84811183)
-  )
   (wire (pts (xy 118.11 109.22) (xy 124.46 109.22))
     (stroke (width 0) (type default))
     (uuid 18a3c3b4-06f6-4ed7-8549-a1aae3fc82bf)
@@ -2013,6 +2105,10 @@
     (stroke (width 0) (type default))
     (uuid 1e37e4c5-cdda-4d2c-8dc4-f35652808ed7)
   )
+  (wire (pts (xy 180.34 114.3) (xy 180.34 116.84))
+    (stroke (width 0) (type default))
+    (uuid 1f115a0e-ce6d-43db-9cc5-b327352802f4)
+  )
   (wire (pts (xy 160.02 60.96) (xy 152.4 60.96))
     (stroke (width 0) (type default))
     (uuid 2b2ea134-1c9b-43c0-bab0-4ed145d024ec)
@@ -2020,10 +2116,6 @@
   (wire (pts (xy 262.89 46.99) (xy 262.89 49.53))
     (stroke (width 0) (type default))
     (uuid 2f7473f8-fb1d-4d2c-94c4-6c03e23f8650)
-  )
-  (wire (pts (xy 135.89 156.21) (xy 135.89 172.72))
-    (stroke (width 0) (type default))
-    (uuid 304adc7f-cc3c-431c-a5c6-1857beab8a03)
   )
   (wire (pts (xy 97.79 118.11) (xy 97.79 109.22))
     (stroke (width 0) (type default))
@@ -2049,6 +2141,14 @@
     (stroke (width 0) (type default))
     (uuid 3f20b5a4-b91a-41dd-bfb0-b0af0899dcc4)
   )
+  (wire (pts (xy 194.31 106.68) (xy 194.31 113.03))
+    (stroke (width 0) (type default))
+    (uuid 42b53622-2cfc-4abb-9a31-e6bc53c49efb)
+  )
+  (wire (pts (xy 180.34 119.38) (xy 180.34 121.92))
+    (stroke (width 0) (type default))
+    (uuid 4400d030-d1c0-41cd-92b2-c480c9cc397c)
+  )
   (wire (pts (xy 147.32 114.3) (xy 147.32 116.84))
     (stroke (width 0) (type default))
     (uuid 467b4321-51c1-423f-b0f1-d75d1cf70d20)
@@ -2065,7 +2165,7 @@
     (stroke (width 0) (type default))
     (uuid 49c56406-36b5-4108-aacb-f5c57f399b04)
   )
-  (wire (pts (xy 181.61 135.89) (xy 179.07 135.89))
+  (wire (pts (xy 254 139.7) (xy 251.46 139.7))
     (stroke (width 0) (type default))
     (uuid 51fe7a75-1887-421f-b8e8-fd78593436c7)
   )
@@ -2093,7 +2193,7 @@
     (stroke (width 0) (type default))
     (uuid 64f11744-8c1f-4d5e-ba1e-5c9b16dd6ca1)
   )
-  (wire (pts (xy 181.61 110.49) (xy 177.8 110.49))
+  (wire (pts (xy 227.33 149.86) (xy 223.52 149.86))
     (stroke (width 0) (type default))
     (uuid 68ed3ef0-2cdb-4d58-96c8-495c894e5d96)
   )
@@ -2113,6 +2213,10 @@
     (stroke (width 0) (type default))
     (uuid 71219bbb-bfa5-4814-8a30-bebfc19ca7d8)
   )
+  (wire (pts (xy 180.34 106.68) (xy 194.31 106.68))
+    (stroke (width 0) (type default))
+    (uuid 7a570316-306e-47bf-871e-f42ed34b85ed)
+  )
   (wire (pts (xy 50.8 118.11) (xy 59.69 118.11))
     (stroke (width 0) (type default))
     (uuid 7ba07e5b-e589-4ccc-8181-4f438d6defa4)
@@ -2125,10 +2229,6 @@
     (stroke (width 0) (type default))
     (uuid 81f1f55d-c18c-4a22-a412-f1b668251fca)
   )
-  (wire (pts (xy 125.73 151.13) (xy 123.19 151.13))
-    (stroke (width 0) (type default))
-    (uuid 8439e1f2-ae64-4915-bded-27a4b0ed376b)
-  )
   (wire (pts (xy 53.34 64.77) (xy 57.15 64.77))
     (stroke (width 0) (type default))
     (uuid 88ffd15c-80bb-43b9-8f7e-96c0ec86f43b)
@@ -2137,7 +2237,7 @@
     (stroke (width 0) (type default))
     (uuid 8cc8a7c4-02c9-4f4d-bb8a-933e28143040)
   )
-  (wire (pts (xy 189.23 107.95) (xy 177.8 107.95))
+  (wire (pts (xy 234.95 147.32) (xy 223.52 147.32))
     (stroke (width 0) (type default))
     (uuid 8e1b460b-dd19-40a5-96c0-6d5052b3dec4)
   )
@@ -2145,13 +2245,9 @@
     (stroke (width 0) (type default))
     (uuid 8eb32423-6e50-476e-95c5-5f9c6c3a373c)
   )
-  (wire (pts (xy 100.33 187.96) (xy 100.33 189.23))
+  (wire (pts (xy 184.15 101.6) (xy 180.34 101.6))
     (stroke (width 0) (type default))
-    (uuid 987765bf-6f64-4e86-8ae3-de758e815175)
-  )
-  (wire (pts (xy 121.92 168.91) (xy 123.19 168.91))
-    (stroke (width 0) (type default))
-    (uuid 99b58b1c-ca7d-4a17-bd7f-0ebf9d3d0385)
+    (uuid 8f367163-102b-47de-8b53-d082f044f25e)
   )
   (wire (pts (xy 81.28 118.11) (xy 74.93 118.11))
     (stroke (width 0) (type default))
@@ -2164,10 +2260,6 @@
   (wire (pts (xy 31.75 110.49) (xy 41.91 110.49))
     (stroke (width 0) (type default))
     (uuid 9eab9cee-2cca-4592-a7dd-1365eeca8d4e)
-  )
-  (wire (pts (xy 107.95 187.96) (xy 107.95 189.23))
-    (stroke (width 0) (type default))
-    (uuid a17fccf8-e870-4aa4-8ba8-c3b432cd86b5)
   )
   (wire (pts (xy 76.2 27.94) (xy 72.39 27.94))
     (stroke (width 0) (type default))
@@ -2209,10 +2301,6 @@
     (stroke (width 0) (type default))
     (uuid bb58c8a3-f636-4041-8b3a-845596397ee0)
   )
-  (wire (pts (xy 123.19 156.21) (xy 135.89 156.21))
-    (stroke (width 0) (type default))
-    (uuid bbffdcb8-b1ba-4c03-95e6-3aee9b1e77c2)
-  )
   (wire (pts (xy 262.89 49.53) (xy 262.89 52.07))
     (stroke (width 0) (type default))
     (uuid bca51722-65c6-465b-ad64-e306e23115c3)
@@ -2220,6 +2308,14 @@
   (wire (pts (xy 191.77 60.96) (xy 177.8 60.96))
     (stroke (width 0) (type default))
     (uuid bdc1cd00-fef6-4a05-8d7f-b5cccd007075)
+  )
+  (wire (pts (xy 189.23 109.22) (xy 189.23 113.03))
+    (stroke (width 0) (type default))
+    (uuid c5b9ea2d-7fbd-4c22-9aac-6e5d8addfd67)
+  )
+  (wire (pts (xy 180.34 109.22) (xy 189.23 109.22))
+    (stroke (width 0) (type default))
+    (uuid c87855e5-0bda-427a-9217-ae1dc91c64e7)
   )
   (wire (pts (xy 26.67 118.11) (xy 26.67 121.92))
     (stroke (width 0) (type default))
@@ -2249,13 +2345,9 @@
     (stroke (width 0) (type default))
     (uuid e400776a-2ff4-4aff-ad8d-758d9ba24024)
   )
-  (wire (pts (xy 187.96 138.43) (xy 179.07 138.43))
+  (wire (pts (xy 260.35 142.24) (xy 251.46 142.24))
     (stroke (width 0) (type default))
     (uuid eb49d7ba-32d0-4bda-8f16-81fa2207adde)
-  )
-  (wire (pts (xy 121.92 163.83) (xy 123.19 163.83))
-    (stroke (width 0) (type default))
-    (uuid f106b467-5d39-48fc-b0b5-16b742c02daa)
   )
   (wire (pts (xy 38.1 27.94) (xy 35.56 27.94))
     (stroke (width 0) (type default))
@@ -2293,7 +2385,7 @@
     (fill (type none))
     (uuid 52d377c2-3f6f-42ac-a28f-3ff1533af52d)
   )
-  (rectangle (start 165.1 96.52) (end 194.31 127)
+  (rectangle (start 215.9 134.62) (end 266.7 166.37)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 699e7d24-e614-4ea8-92ba-a059e631495f)
@@ -2313,7 +2405,7 @@
     (fill (type none))
     (uuid 9463a22b-7426-41c5-9d8c-816f7fcaaf11)
   )
-  (rectangle (start 13.97 95.25) (end 152.4 195.58)
+  (rectangle (start 13.97 82.55) (end 152.4 195.58)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid ac6d3d8d-7702-44a0-9282-3661b9a6c692)
@@ -2334,7 +2426,7 @@
     (uuid ec9d26a0-1932-4311-a82a-ea4a88af2b9e)
   )
 
-  (text "Jumper Pins" (at 168.91 100.33 0)
+  (text "Jumper Pins" (at 218.44 139.7 0)
     (effects (font (size 2.27 2.27)) (justify left bottom))
     (uuid 0a7c3425-cf70-437e-9ac5-25b054351ef9)
   )
@@ -2393,13 +2485,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "GP33" (shape input) (at 179.07 151.13 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 04a4b54d-a503-4778-8338-fe810bb60f48)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.0142 151.13 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "ADC_BAT" (shape input) (at 147.32 114.3 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 051af6ad-2039-4ad0-b5f0-5e25ad3e90a4)
@@ -2435,6 +2520,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "D+" (shape input) (at 180.34 119.38 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 0ce36756-1ca1-4008-9bc5-62e131640a9a)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 186.1676 119.38 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "SCL" (shape input) (at 101.6 63.5 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0e1209f9-9edf-40f4-b3f0-1bd5d598162e)
@@ -2442,10 +2534,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "GP42" (shape input) (at 179.07 158.75 0) (fields_autoplaced)
+  (global_label "GP15" (shape input) (at 223.52 152.4 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 0eb0c7df-d374-466c-8746-60d08344b269)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.0142 158.75 0)
+    (uuid 115e10f1-f13b-45c1-8a21-09aa80ef99ff)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 231.4642 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2453,13 +2545,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 142e48ee-f4a2-455e-84bf-b8ab7d2888f7)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 62.6147 64.77 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "GP17" (shape input) (at 179.07 146.05 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 1a6b1d09-ee66-40fd-850a-10e21c521acc)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.0142 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2505,13 +2590,6 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "TX" (shape input) (at 179.07 153.67 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 44d16e16-72d6-4afb-aa03-d4b9329d52b5)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 184.2323 153.67 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "GP17" (shape input) (at 222.25 67.31 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 4636fc9f-7419-4368-84d3-a9474da3e1ac)
@@ -2533,13 +2611,6 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "D+" (shape input) (at 121.92 168.91 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 4908287e-1599-4c45-a61e-3b9c3e8f0bb2)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 127.7476 168.91 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "hall_3" (shape input) (at 154.94 29.21 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 497c3484-1f21-4a2b-85e2-85688beb053b)
@@ -2551,6 +2622,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4c84606e-275a-4be1-8dec-628b04667ed5)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 78.74 147.54 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "GP14" (shape input) (at 251.46 147.32 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 5028e795-4163-4969-9fdf-84fcc8e8d7b8)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.4042 147.32 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2568,10 +2646,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "GP12" (shape input) (at 177.8 123.19 0) (fields_autoplaced)
+  (global_label "GP12" (shape input) (at 223.52 162.56 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 5fa8d7d7-0667-44f1-a8ef-57b3c92ccdd6)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 123.19 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 231.4642 162.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2589,10 +2667,24 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "TX" (shape input) (at 251.46 162.56 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 6166945c-ffb6-447d-9aad-67452f92ba5a)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.6223 162.56 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "SCL" (shape input) (at 123.19 63.5 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 61d0c4f9-c954-4b03-ab6e-2cbdec40bd84)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 129.6828 63.5 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "D-" (shape input) (at 180.34 114.3 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 6236eca7-097c-4738-b29f-efd8be1457e7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 186.1676 114.3 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2610,6 +2702,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "GP18" (shape input) (at 223.52 160.02 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 6a86c067-e83e-4246-b056-21597ba5b91a)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 231.4642 160.02 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "JSW" (shape input) (at 177.8 68.58 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 746e27cb-5cad-4b78-8092-24f3c90b626e)
@@ -2621,6 +2720,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 74eceaaf-3c60-4def-9e61-f323a7b584ef)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 43.18 147.54 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "GP16" (shape input) (at 223.52 154.94 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 7617d9c7-7183-48c0-8fb6-2b1b0ca3fac1)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 231.4642 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2666,13 +2772,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "RX" (shape input) (at 179.07 156.21 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 929d5e16-7a69-474b-82a3-e248fda9b0ad)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 184.5347 156.21 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "hall_1" (shape input) (at 76.2 27.94 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 92eb0e24-b066-49a2-8bd5-bfbb0dda9f5b)
@@ -2687,17 +2786,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "RX" (shape input) (at 251.46 160.02 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 9be77b48-5536-42bc-9f90-c3d37d16d451)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.9247 160.02 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "GP33" (shape input) (at 262.89 85.09 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a8f81bd3-3bb4-486a-a59c-3687c970a0b4)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 270.8342 85.09 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "GP16" (shape input) (at 177.8 113.03 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid ab346713-2702-4497-bb2d-fe9f0a55d766)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2719,6 +2818,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b461b5e2-5691-4402-905a-4815bc43bd7f)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 159.0137 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "GP42" (shape input) (at 251.46 157.48 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b5244399-8fd8-4a09-a96b-a5a2e6693f51)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.4042 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2764,10 +2870,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "GP34" (shape input) (at 179.07 148.59 0) (fields_autoplaced)
+  (global_label "GP17" (shape input) (at 223.52 157.48 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid cde629e9-2c03-4160-b6c4-2fc75de7d790)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.0142 148.59 0)
+    (uuid cd97ace1-fa6b-4b86-a781-bb81a0edfe94)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 231.4642 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2776,13 +2882,6 @@
     (uuid ce37f830-0071-4ecd-8939-463a66c1dae0)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 214.3058 69.85 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "D-" (shape input) (at 121.92 163.83 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid cec83c2d-dbf8-4a97-ad51-43a9f5ceb077)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 127.7476 163.83 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "VBAT" (shape input) (at 19.05 110.49 90) (fields_autoplaced)
@@ -2806,31 +2905,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "GP15" (shape input) (at 177.8 115.57 0) (fields_autoplaced)
+  (global_label "GP33" (shape input) (at 251.46 152.4 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid dd3032ea-658b-4a44-ad24-95a2a4575362)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 115.57 0)
+    (uuid dca2554d-ea67-409b-9372-fa50b3e3662d)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.4042 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "GP13" (shape input) (at 177.8 120.65 0) (fields_autoplaced)
+  (global_label "GP34" (shape input) (at 251.46 154.94 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e0a9f256-eaa5-45dd-865b-1c20f9942292)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 120.65 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "GP14" (shape input) (at 177.8 118.11 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e17ff95f-b559-4895-9eaf-b7cbf259139b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.7442 118.11 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "GP18" (shape input) (at 179.07 143.51 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e3792f2d-684e-4cea-bcc2-4f31d97c944d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.0142 143.51 0)
+    (uuid e4704ab3-00e1-4086-b45c-a821126de4f7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.4042 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2848,10 +2933,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "GP21" (shape input) (at 179.07 140.97 0) (fields_autoplaced)
+  (global_label "GP13" (shape input) (at 251.46 144.78 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid f1bcd2a1-f6b9-4dc9-a7c5-7d5a6f3ffeaa)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 187.0142 140.97 0)
+    (uuid eda603b7-e2d4-472b-85d4-b60dd39e959d)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.4042 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2866,6 +2951,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f5613913-e09e-4bfb-928c-67f8efc7f81f)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 269.5037 100.33 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "GP21" (shape input) (at 251.46 149.86 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid f8640384-8877-48e3-93b9-a0949063efd5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.4042 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2895,7 +2987,7 @@
     (pin "1" (uuid ea4099a0-7859-4e98-8bed-6e48c0f79ff1))
     (pin "2" (uuid 9db28208-c4cf-422c-bf29-43df98516a1e))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "SW_RST1") (unit 1)
         )
@@ -2921,7 +3013,7 @@
     (pin "1" (uuid 0dc877cc-1dc3-4315-ad90-4e00489db960))
     (pin "2" (uuid adb52f5e-5e46-4693-a2a1-2ab111866af1))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "SW_BOOT1") (unit 1)
         )
@@ -2951,7 +3043,7 @@
           (reference "#PWR04") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR034") (unit 1)
         )
@@ -2986,7 +3078,7 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR014") (unit 1)
         )
@@ -3018,7 +3110,7 @@
           (reference "H1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "H1") (unit 1)
         )
@@ -3058,7 +3150,7 @@
           (reference "MAX1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "MAX1") (unit 1)
         )
@@ -3097,7 +3189,7 @@
           (reference "R1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "R7") (unit 1)
         )
@@ -3137,9 +3229,44 @@
           (reference "#PWR041") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR023") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 157.48 167.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1d9c5486-808c-45c3-ae5b-345ba386f318)
+    (property "Reference" "#PWR08" (at 157.48 173.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 157.48 172.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 157.48 167.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 157.48 167.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7eb5ca31-8f86-4cae-a9c8-b2770a036ae5))
+    (instances
+      (project "OM-EPSC3-Micro"
+        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
+          (reference "#PWR08") (unit 1)
+        )
+      )
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+      (project "ThinkTankTimerVote"
+        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3173,7 +3300,7 @@
           (reference "C10") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C7") (unit 1)
         )
@@ -3212,7 +3339,7 @@
           (reference "R1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "R8") (unit 1)
         )
@@ -3252,9 +3379,88 @@
           (reference "#PWR043") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR022") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 194.31 120.65 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2dd0adb0-ec1f-46e9-a596-b7ed67048e8a)
+    (property "Reference" "#PWR08" (at 194.31 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 194.31 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 194.31 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 194.31 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4c12a89e-f4ca-420f-88a2-1764e7ffbfda))
+    (instances
+      (project "OM-EPSC3-Micro"
+        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
+          (reference "#PWR08") (unit 1)
+        )
+      )
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "#PWR047") (unit 1)
+        )
+      )
+      (project "ThinkTankTimerVote"
+        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
+          (reference "#PWR018") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 189.23 116.84 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2e5456e4-9389-42b2-80d8-9fad35f1c7bf)
+    (property "Reference" "R8" (at 189.23 110.49 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "5.1K" (at 189.23 113.03 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 187.452 116.84 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 189.23 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPN" "C25905" (at 189.23 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 008af361-205d-45cf-8110-a5463c5013c1))
+    (pin "2" (uuid 9a425322-4765-47a7-9ed0-9138d7dcd492))
+    (instances
+      (project "uLabel_v0"
+        (path "/531dcaa5-0d01-4877-a828-d5445ad753bd"
+          (reference "R8") (unit 1)
+        )
+      )
+      (project "OM-EPSC3-Micro"
+        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
+          (reference "R1") (unit 1)
+        )
+      )
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "R1") (unit 1)
+        )
+      )
+      (project "ThinkTankTimerVote"
+        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -3287,7 +3493,7 @@
           (reference "#PWR017") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR039") (unit 1)
         )
@@ -3326,7 +3532,7 @@
           (reference "U5") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "U3") (unit 1)
         )
@@ -3361,7 +3567,7 @@
           (reference "#PWR042") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR024") (unit 1)
         )
@@ -3397,7 +3603,7 @@
           (reference "C9") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C6") (unit 1)
         )
@@ -3426,7 +3632,7 @@
     (pin "4" (uuid 06eb6c76-c82d-44ce-b4c2-b65a630797a4))
     (pin "5" (uuid d3d44cc1-c0c1-4a90-8b2a-c5d3809d264c))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "Joystick2") (unit 1)
         )
@@ -3456,7 +3662,7 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR07") (unit 1)
         )
@@ -3464,19 +3670,19 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x10_Pin") (at 173.99 146.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "Connector:Conn_01x10_Pin") (at 246.38 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 3804dd29-ad95-4e6f-b7fd-54210ead8ff3)
-    (property "Reference" "J3" (at 174.625 130.81 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x10_Pin" (at 174.625 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x10_P2.00mm_Vertical" (at 173.99 146.05 0)
+    (property "Reference" "J3" (at 247.015 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 173.99 146.05 0)
+    (property "Value" "Conn_01x10_Pin" (at 261.62 153.67 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x10_P2.00mm_Vertical" (at 246.38 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 246.38 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f84282c9-4562-4aa8-a2de-c6a716cbbdc8))
@@ -3490,53 +3696,9 @@
     (pin "8" (uuid ddde87ba-19a2-4f8d-bba7-3619f96b1313))
     (pin "9" (uuid 07e12006-ca3f-4f53-850d-c01d28dfab42))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 129.54 162.56 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 392b17bc-792d-4d55-974e-6d16218b7c39)
-    (property "Reference" "R8" (at 131.318 161.3916 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "5.1K" (at 131.318 163.703 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 127.762 162.56 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 129.54 162.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPN" "C25905" (at 129.54 162.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 136aa554-3e5b-471d-a025-5e9cc09f09ff))
-    (pin "2" (uuid a461f819-d194-4e4d-a3aa-2252ab98eca7))
-    (instances
-      (project "uLabel_v0"
-        (path "/531dcaa5-0d01-4877-a828-d5445ad753bd"
-          (reference "R8") (unit 1)
-        )
-      )
-      (project "OM-EPSC3-Micro"
-        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "ThinkTankTimerVote"
-        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
-          (reference "R4") (unit 1)
         )
       )
     )
@@ -3564,7 +3726,7 @@
           (reference "#PWR014") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR050") (unit 1)
         )
@@ -3604,7 +3766,7 @@
           (reference "#PWR048") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR042") (unit 1)
         )
@@ -3634,7 +3796,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR036") (unit 1)
         )
@@ -3642,43 +3804,6 @@
       (project "ThinkTankTimerVote"
         (path "/f5106d17-538e-4380-9554-aa558f4a587a"
           (reference "#PWR018") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:USB_C_Plug_USB2.0") (at 107.95 166.37 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4031c605-1901-4a16-9a7c-fc50b71a2f1d)
-    (property "Reference" "P1" (at 107.95 143.51 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "USB_C_Plug_USB2.0" (at 107.95 146.05 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085" (at 111.76 166.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 111.76 166.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "A1" (uuid 6555ae5b-977d-44e0-8652-cef2ec56d9b4))
-    (pin "A12" (uuid 374060e2-ed33-41e7-a76c-387e7ea08e30))
-    (pin "A4" (uuid d4e5d578-2336-478c-9dad-f9c3625583a0))
-    (pin "A5" (uuid 2264f9d1-c5a8-41ef-867b-883af44a2c24))
-    (pin "A6" (uuid fdfaca8f-a4b8-4cf8-ad48-1b44caff578c))
-    (pin "A7" (uuid 26f7833d-8f56-48af-8ba1-7206169225b0))
-    (pin "A9" (uuid fd4dcf1d-3976-4570-a889-dc3882b6340b))
-    (pin "B1" (uuid 321e8ff6-d0a3-465b-b276-4f172af5b1ff))
-    (pin "B12" (uuid 95a820fd-7fbb-4817-950b-f289ca3621c7))
-    (pin "B4" (uuid 92b8efc2-e914-45b9-91fd-d29117f05955))
-    (pin "B5" (uuid 76c88b01-e840-4778-b199-545d07862c71))
-    (pin "B9" (uuid 6993c87d-9d7c-406a-ad0d-5c5e01455924))
-    (pin "S1" (uuid 8653e348-eef1-43da-b255-ee8f36f5f7d7))
-    (instances
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "P1") (unit 1)
         )
       )
     )
@@ -3700,7 +3825,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "H7") (unit 1)
         )
@@ -3726,7 +3851,7 @@
     (pin "1" (uuid 9ed71b7f-e168-4263-a667-1708bebd5184))
     (pin "2" (uuid 50a096ec-d042-46aa-bb7d-4387b158344b))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "JP1") (unit 1)
         )
@@ -3756,7 +3881,7 @@
           (reference "#PWR05") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR035") (unit 1)
         )
@@ -3791,7 +3916,7 @@
           (reference "#PWR014") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR054") (unit 1)
         )
@@ -3823,7 +3948,7 @@
     (pin "2" (uuid a5d174ab-7979-4610-bb02-a3674aa49ef9))
     (pin "3" (uuid 44155355-b1f1-4abb-b405-5ac119b05147))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "Q2") (unit 1)
         )
@@ -3853,7 +3978,7 @@
           (reference "#PWR019") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR03") (unit 1)
         )
@@ -3887,7 +4012,7 @@
           (reference "U2") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "U4") (unit 1)
         )
@@ -3922,7 +4047,7 @@
           (reference "#PWR011") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR06") (unit 1)
         )
@@ -3952,7 +4077,7 @@
           (reference "#PWR014") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR043") (unit 1)
         )
@@ -3965,19 +4090,19 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 181.61 135.89 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 254 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5723c306-7db3-4dd7-a4fd-dc1dcc19390e)
-    (property "Reference" "#PWR08" (at 181.61 142.24 0)
+    (property "Reference" "#PWR08" (at 254 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 184.15 135.89 0)
+    (property "Value" "GND" (at 256.54 139.7 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 181.61 135.89 0)
+    (property "Footprint" "" (at 254 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 181.61 135.89 0)
+    (property "Datasheet" "" (at 254 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ba2730b0-9ebf-4918-bd8d-7da18bcb5d36))
@@ -3987,7 +4112,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR028") (unit 1)
         )
@@ -4022,7 +4147,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR044") (unit 1)
         )
@@ -4057,7 +4182,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR048") (unit 1)
         )
@@ -4065,6 +4190,55 @@
       (project "ThinkTankTimerVote"
         (path "/f5106d17-538e-4380-9554-aa558f4a587a"
           (reference "#PWR018") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:USB_C_Receptacle") (at 165.1 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5e176649-1c71-42bd-adce-5f99015aa26a)
+    (property "Reference" "J4" (at 165.1 93.98 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "USB_C_Receptacle" (at 165.1 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" (at 168.91 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 168.91 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "A1" (uuid f5792309-7935-4a7f-9824-e4400a45c9f9))
+    (pin "A10" (uuid 74e807ad-43ab-4bde-9d84-b114e994fda4))
+    (pin "A11" (uuid 56371cf4-722c-4e8e-91e6-f82e0dab7d59))
+    (pin "A12" (uuid 0d389cab-a4d8-4778-8480-3c1f6bee202e))
+    (pin "A2" (uuid a88f2b68-8b68-46dc-838e-ad940ea70563))
+    (pin "A3" (uuid 1884d62d-6c0e-4dc8-b336-45166a18e5f1))
+    (pin "A4" (uuid 7f9598b5-876b-4ab1-a2da-af19f88cdbcf))
+    (pin "A5" (uuid deea67b5-b427-47e1-b5ea-91f5d85575d8))
+    (pin "A6" (uuid d0fa175e-764c-4388-95c6-6969f49918af))
+    (pin "A7" (uuid ea870557-fc55-4b2f-bfb0-d4d8f87b43f1))
+    (pin "A8" (uuid f39d7044-351f-4285-bd8d-b1fc1960740f))
+    (pin "A9" (uuid 71b5d0c9-cf40-4f7b-aab6-b5bd95993482))
+    (pin "B1" (uuid 8ea83d1a-eeff-48a3-bef3-90a4cdd37c9e))
+    (pin "B10" (uuid d77279b4-c0b4-4511-95de-5d43b9931e9c))
+    (pin "B11" (uuid 5cfe5e1f-01f3-49be-9d2f-63d23f4921f7))
+    (pin "B12" (uuid 784dadd4-818e-4ce7-bf7a-cc372103997f))
+    (pin "B2" (uuid 2dc18d01-8874-4fd3-9b2a-4cf9c2f4170e))
+    (pin "B3" (uuid e9602a66-048a-4c07-82c6-1b1a15da27ad))
+    (pin "B4" (uuid 8776c7bc-816e-4236-b143-8611989511d2))
+    (pin "B5" (uuid e59be74b-55e7-4f7f-806e-2da242a1ab16))
+    (pin "B6" (uuid 955110d3-1fdc-4f67-8b8a-5fc4d5482de6))
+    (pin "B7" (uuid 266ebfb2-e1be-47a7-b959-e3a54f6a5eec))
+    (pin "B8" (uuid 9662b368-a089-4d73-aeff-3affafe05ae8))
+    (pin "B9" (uuid e628634e-5dfe-416b-be27-c41937c57027))
+    (pin "S1" (uuid a1c8cbac-239a-462c-808d-a5b11d51be2c))
+    (instances
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -4101,7 +4275,7 @@
           (reference "C1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C3") (unit 1)
         )
@@ -4131,7 +4305,7 @@
           (reference "#PWR012") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR04") (unit 1)
         )
@@ -4163,7 +4337,7 @@
           (reference "H1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "H3") (unit 1)
         )
@@ -4189,7 +4363,7 @@
     (pin "1" (uuid 0096a826-e3ff-44ae-9c21-67a1b96dece1))
     (pin "2" (uuid 0335949a-75a9-44d4-93d1-dbae7c8bac72))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "SW_SEL1") (unit 1)
         )
@@ -4225,7 +4399,7 @@
           (reference "R8") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "R3") (unit 1)
         )
@@ -4233,19 +4407,19 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 187.96 138.43 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 260.35 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 75232af8-f205-4b53-ab63-51d58c36975b)
-    (property "Reference" "#PWR013" (at 187.96 142.24 0)
+    (property "Reference" "#PWR013" (at 260.35 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 187.96 133.35 0)
+    (property "Value" "+3V3" (at 260.35 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 187.96 138.43 0)
+    (property "Footprint" "" (at 260.35 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 187.96 138.43 0)
+    (property "Datasheet" "" (at 260.35 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b3ca3925-6bc3-4ae5-b111-59a9d4951335))
@@ -4260,7 +4434,7 @@
           (reference "#PWR048") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR021") (unit 1)
         )
@@ -4290,7 +4464,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR049") (unit 1)
         )
@@ -4320,7 +4494,7 @@
     )
     (pin "1" (uuid 863a65fa-b9ca-4bc0-a43c-5c2140393e9a))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR033") (unit 1)
         )
@@ -4350,7 +4524,7 @@
           (reference "#PWR013") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR05") (unit 1)
         )
@@ -4380,7 +4554,7 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR015") (unit 1)
         )
@@ -4419,53 +4593,9 @@
           (reference "R1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "R4") (unit 1)
-        )
-      )
-      (project "ThinkTankTimerVote"
-        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
-          (reference "R4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 135.89 176.53 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 81a2a2d5-40e8-447d-ba73-7b2c7c6411d3)
-    (property "Reference" "R8" (at 137.668 175.3616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "5.1K" (at 137.668 177.673 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 134.112 176.53 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 135.89 176.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPN" "C25905" (at 135.89 176.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1a9dbb1a-4899-4224-8b9a-9e6418f56b9f))
-    (pin "2" (uuid ae535541-747b-4f70-8f4c-f7073da20658))
-    (instances
-      (project "uLabel_v0"
-        (path "/531dcaa5-0d01-4877-a828-d5445ad753bd"
-          (reference "R8") (unit 1)
-        )
-      )
-      (project "OM-EPSC3-Micro"
-        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "R2") (unit 1)
         )
       )
       (project "ThinkTankTimerVote"
@@ -4503,7 +4633,7 @@
           (reference "#PWR049") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR031") (unit 1)
         )
@@ -4511,19 +4641,19 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 181.61 110.49 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 227.33 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 84ad1f96-b550-4a67-83c3-4d5a6699c45a)
-    (property "Reference" "#PWR013" (at 181.61 114.3 0)
+    (property "Reference" "#PWR013" (at 227.33 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 181.61 105.41 0)
+    (property "Value" "+3V3" (at 227.33 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 181.61 110.49 0)
+    (property "Footprint" "" (at 227.33 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 181.61 110.49 0)
+    (property "Datasheet" "" (at 227.33 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3bc2b65b-1f1a-49f5-a739-d159d44f44a9))
@@ -4538,7 +4668,7 @@
           (reference "#PWR048") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR018") (unit 1)
         )
@@ -4573,7 +4703,7 @@
           (reference "#PWR042") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR052") (unit 1)
         )
@@ -4603,7 +4733,7 @@
           (reference "#PWR011") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR02") (unit 1)
         )
@@ -4635,7 +4765,7 @@
           (reference "H0") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "H2") (unit 1)
         )
@@ -4674,7 +4804,7 @@
           (reference "R1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "R6") (unit 1)
         )
@@ -4682,6 +4812,41 @@
       (project "ThinkTankTimerVote"
         (path "/f5106d17-538e-4380-9554-aa558f4a587a"
           (reference "R4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 189.23 120.65 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8a23a2ca-e57b-4227-aa8c-6700bf52be90)
+    (property "Reference" "#PWR08" (at 189.23 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 189.23 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 189.23 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 189.23 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 315624b7-1137-4581-ad66-a30349af825a))
+    (instances
+      (project "OM-EPSC3-Micro"
+        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
+          (reference "#PWR08") (unit 1)
+        )
+      )
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "#PWR046") (unit 1)
+        )
+      )
+      (project "ThinkTankTimerVote"
+        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -4715,44 +4880,9 @@
           (reference "R8") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "R9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 100.33 187.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 93b322ff-05bf-4b6a-b7b5-26d488f02905)
-    (property "Reference" "#PWR08" (at 100.33 194.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 100.33 193.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 100.33 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 100.33 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e61859d0-64b1-4886-85ca-01a4b824d6fc))
-    (instances
-      (project "OM-EPSC3-Micro"
-        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-      (project "ThinkTankTimerVote"
-        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
-          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -4780,7 +4910,7 @@
           (reference "#PWR015") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR051") (unit 1)
         )
@@ -4824,7 +4954,7 @@
           (reference "C1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C5") (unit 1)
         )
@@ -4859,7 +4989,7 @@
           (reference "#PWR048") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR020") (unit 1)
         )
@@ -4895,7 +5025,7 @@
           (reference "SW2") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "SW_PWR1") (unit 1)
         )
@@ -4924,7 +5054,7 @@
     (pin "4" (uuid 42123d33-c37d-4343-ae89-a9de094b0dc8))
     (pin "5" (uuid c5b63c8b-54e0-47bb-84ed-08089de4300c))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "Joystick1") (unit 1)
         )
@@ -4954,7 +5084,7 @@
           (reference "#PWR018") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR09") (unit 1)
         )
@@ -4984,9 +5114,34 @@
           (reference "#PWR019") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR08") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VBUS") (at 184.15 101.6 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a18674f5-a9cf-4c59-8aa2-5ea37971de76)
+    (property "Reference" "#PWR017" (at 184.15 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VBUS" (at 184.15 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 184.15 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 184.15 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3346b986-683d-49eb-a31c-b28e4e3a87c1))
+    (instances
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -5017,7 +5172,7 @@
           (reference "J4") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "J9") (unit 1)
         )
@@ -5048,7 +5203,7 @@
     (pin "1" (uuid ab810bd5-e735-4075-a805-66afbaa4eaad))
     (pin "2" (uuid b5b9a8b0-6dae-40fb-b6f1-0dbf113c9cf7))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "D1") (unit 1)
         )
@@ -5087,7 +5242,7 @@
           (reference "C5") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C8") (unit 1)
         )
@@ -5122,7 +5277,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR038") (unit 1)
         )
@@ -5135,19 +5290,19 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x07_Pin") (at 172.72 115.57 0) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x07_Pin") (at 218.44 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7c9b309-f4b3-4aaa-95f6-1b903e213afe)
-    (property "Reference" "J6" (at 173.355 102.87 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x07_Pin" (at 173.355 105.41 0)
+    (property "Reference" "J6" (at 219.075 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x07_P2.00mm_Vertical" (at 172.72 115.57 0)
+    (property "Value" "Conn_01x07_Pin" (at 219.075 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 172.72 115.57 0)
+    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x07_P2.00mm_Vertical" (at 218.44 154.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 218.44 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8a8e06e9-8d36-4b02-b480-0bce460d7c9f))
@@ -5158,7 +5313,7 @@
     (pin "6" (uuid b5b9ebc0-a908-4723-a160-b73293624569))
     (pin "7" (uuid c480c9b7-5385-4257-909c-e9037563849b))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "J6") (unit 1)
         )
@@ -5193,34 +5348,9 @@
           (reference "#PWR046") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR029") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VBUS") (at 125.73 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ad8e3e06-de76-419d-9fe8-0aec351a9e93)
-    (property "Reference" "#PWR017" (at 125.73 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VBUS" (at 125.73 146.05 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 125.73 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 125.73 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 919cb7c0-dab2-44fe-b179-6f7fac0c31d4))
-    (instances
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -5287,7 +5417,7 @@
     (pin "8" (uuid 643b6e04-a0c8-4b37-9136-2e1a83963ab8))
     (pin "9" (uuid dc958a71-56cd-46ed-97ae-079d9c47a74c))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "U2") (unit 1)
         )
@@ -5322,7 +5452,7 @@
           (reference "#PWR048") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR032") (unit 1)
         )
@@ -5361,7 +5491,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C2") (unit 1)
         )
@@ -5391,44 +5521,9 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR041") (unit 1)
-        )
-      )
-      (project "ThinkTankTimerVote"
-        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
-          (reference "#PWR018") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 135.89 180.34 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bf49f5d3-8a56-47a6-8022-a3db9aaf0f4d)
-    (property "Reference" "#PWR08" (at 135.89 186.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 135.89 185.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 135.89 180.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 135.89 180.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5eeddb63-dbd1-46ca-a3b8-a032cd99f6e0))
-    (instances
-      (project "OM-EPSC3-Micro"
-        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "#PWR047") (unit 1)
         )
       )
       (project "ThinkTankTimerVote"
@@ -5461,44 +5556,9 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR040") (unit 1)
-        )
-      )
-      (project "ThinkTankTimerVote"
-        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
-          (reference "#PWR018") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 107.95 187.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c274dbef-11f9-46e9-a289-19ac7856902e)
-    (property "Reference" "#PWR08" (at 107.95 194.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 107.95 193.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 107.95 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 107.95 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 09e98a5a-e879-4b3a-b1e1-f695b6514153))
-    (instances
-      (project "OM-EPSC3-Micro"
-        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "#PWR045") (unit 1)
         )
       )
       (project "ThinkTankTimerVote"
@@ -5525,7 +5585,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "H8") (unit 1)
         )
@@ -5555,7 +5615,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR055") (unit 1)
         )
@@ -5590,7 +5650,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR011") (unit 1)
         )
@@ -5634,7 +5694,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C1") (unit 1)
         )
@@ -5642,19 +5702,19 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 189.23 107.95 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 234.95 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cfee6776-e4ed-41db-9cfb-fed3f7552173)
-    (property "Reference" "#PWR08" (at 189.23 114.3 0)
+    (property "Reference" "#PWR08" (at 234.95 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 189.23 113.03 0)
+    (property "Value" "GND" (at 234.95 152.4 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 189.23 107.95 0)
+    (property "Footprint" "" (at 234.95 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 189.23 107.95 0)
+    (property "Datasheet" "" (at 234.95 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b775e4b2-4017-4c42-986d-b1aa9406ef8c))
@@ -5664,7 +5724,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR016") (unit 1)
         )
@@ -5699,7 +5759,7 @@
           (reference "#PWR013") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR01") (unit 1)
         )
@@ -5730,7 +5790,7 @@
           (reference "J4") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "J2") (unit 1)
         )
@@ -5763,7 +5823,7 @@
           (reference "J4") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "J1") (unit 1)
         )
@@ -5794,7 +5854,7 @@
     (pin "1" (uuid f13501bb-8f63-459d-8a36-9d7a58530b5f))
     (pin "2" (uuid c7a2b9b0-0ac1-4a7b-9872-c60de27b85f3))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "SW_M1") (unit 1)
         )
@@ -5819,7 +5879,7 @@
     )
     (pin "1" (uuid 8c3730a2-7f14-4b7d-9d12-b732538db35e))
     (instances
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR053") (unit 1)
         )
@@ -5849,7 +5909,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR026") (unit 1)
         )
@@ -5884,7 +5944,7 @@
           (reference "#PWR012") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR013") (unit 1)
         )
@@ -5919,7 +5979,7 @@
           (reference "#PWR047") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR030") (unit 1)
         )
@@ -5958,7 +6018,7 @@
           (reference "C1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "C4") (unit 1)
         )
@@ -5988,7 +6048,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR012") (unit 1)
         )
@@ -6023,7 +6083,7 @@
           (reference "#PWR015") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR037") (unit 1)
         )
@@ -6059,9 +6119,53 @@
           (reference "J4") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "BattExtLTC4054") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 194.31 116.84 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid eb0b10a9-086c-48c3-a54f-fd0ec99088e7)
+    (property "Reference" "R8" (at 194.31 110.49 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "5.1K" (at 194.31 113.03 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 192.532 116.84 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 194.31 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPN" "C25905" (at 194.31 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 701f22b8-a5e4-4b81-8944-29d4c4da6461))
+    (pin "2" (uuid b2b6072a-3177-46e6-814e-20241b8e275c))
+    (instances
+      (project "uLabel_v0"
+        (path "/531dcaa5-0d01-4877-a828-d5445ad753bd"
+          (reference "R8") (unit 1)
+        )
+      )
+      (project "OM-EPSC3-Micro"
+        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
+          (reference "R1") (unit 1)
+        )
+      )
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "R2") (unit 1)
+        )
+      )
+      (project "ThinkTankTimerVote"
+        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -6094,7 +6198,7 @@
           (reference "#PWR044") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR027") (unit 1)
         )
@@ -6133,7 +6237,7 @@
           (reference "R2") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "R5") (unit 1)
         )
@@ -6168,7 +6272,7 @@
           (reference "#PWR014") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR025") (unit 1)
         )
@@ -6208,44 +6312,9 @@
           (reference "#PWR017") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "#PWR010") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 129.54 166.37 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f3be58d3-a777-43e5-a690-cf267daeeb6a)
-    (property "Reference" "#PWR08" (at 129.54 172.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 129.54 171.45 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 129.54 166.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 129.54 166.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ecd55cda-2d09-48a2-8943-0e8502871048))
-    (instances
-      (project "OM-EPSC3-Micro"
-        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "LASK_V1-1"
-        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
-          (reference "#PWR046") (unit 1)
-        )
-      )
-      (project "ThinkTankTimerVote"
-        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
-          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -6282,7 +6351,7 @@
           (reference "D1") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "D2") (unit 1)
         )
@@ -6319,9 +6388,44 @@
           (reference "H0") (unit 1)
         )
       )
-      (project "LASK_V1-1"
+      (project "LASK-V2-0"
         (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
           (reference "H4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 165.1 167.64 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fd2117b9-ccb0-4409-814b-22df722de6ac)
+    (property "Reference" "#PWR08" (at 165.1 173.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 165.1 172.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 165.1 167.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 165.1 167.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 33f84143-6596-446b-a1a7-e94a19042094))
+    (instances
+      (project "OM-EPSC3-Micro"
+        (path "/c7fe26ae-9505-4931-9cd8-090fc73447cd"
+          (reference "#PWR08") (unit 1)
+        )
+      )
+      (project "LASK-V2-0"
+        (path "/f2c1fb6a-8426-42c4-8a46-0c2e9dae6c65"
+          (reference "#PWR045") (unit 1)
+        )
+      )
+      (project "ThinkTankTimerVote"
+        (path "/f5106d17-538e-4380-9554-aa558f4a587a"
+          (reference "#PWR018") (unit 1)
         )
       )
     )
