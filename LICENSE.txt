@@ -1,0 +1,9 @@
+CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
+
+You may redistribute and modify this hardware design under the terms of the CERN-OHL-S-2.0.
+A copy of the license is available at: https://ohwr.org/cern_ohl_s_v2.txt
+
+This project is certified as open source hardware by OSHWA.
+Certification UID: [insert your OSHWA certification UID here]
+
+By contributing to this project, you agree that your contributions will be licensed under the same terms.
