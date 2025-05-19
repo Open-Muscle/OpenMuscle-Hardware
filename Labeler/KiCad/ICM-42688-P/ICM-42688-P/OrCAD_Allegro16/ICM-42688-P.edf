@@ -1,0 +1,219 @@
+
+(EDIF
+  (rename &ICM_42688_P "ICM_42688_P")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2025 05 17 19 00 43)
+      (dataOrigin "13629859/941697/2.50/14/2/Integrated Circuit")
+      (program "SamacSys ECAD Model ICM_42688_P"
+        (version "4.1"))))
+  (library
+  (rename &ICM_42688_P "ICM_42688_P")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &ICM_42688_P "ICM_42688_P")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "IC")
+          (property (rename PACKAGENAME "PackageName") (string "ICM_42688_P"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "IIM42352"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "410-ICM-42688-P"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/TDK-InvenSense/ICM-42688-P?qs=OlC7AqGiEDk8QrNAV728zw%3D%3D"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "TDK"))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "ICM-42688-P"))
+          (property (rename &Description "Description") (string "IMU (Inertial Measurement Unit), 6-Axis, Accelerometer, Gyroscope"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "https://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/DS-000347-ICM-42688-P-v1.5.pdf"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "ICM_42688_P"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &AP_SDO___AP_AD0 "AP_SDO___AP_AD0")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &RESV_1 "RESV_1")
+            (designator "2")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (port
+            (rename &RESV_2 "RESV_2")
+            (designator "3")
+            (property (rename ORDER "Order") (string "2") (owner "OrCAD"))
+          )
+          (port
+            (rename &INT1___INT "INT1___INT")
+            (designator "4")
+            (property (rename ORDER "Order") (string "3") (owner "OrCAD"))
+          )
+          (port
+            (rename &VDDIO "VDDIO")
+            (designator "5")
+            (property (rename ORDER "Order") (string "4") (owner "OrCAD"))
+          )
+          (port
+            (rename &GND "GND")
+            (designator "6")
+            (property (rename ORDER "Order") (string "5") (owner "OrCAD"))
+          )
+          (port
+            (rename &RESV_3 "RESV_3")
+            (designator "7")
+            (property (rename ORDER "Order") (string "6") (owner "OrCAD"))
+          )
+          (port
+            (rename &VDD "VDD")
+            (designator "8")
+            (property (rename ORDER "Order") (string "7") (owner "OrCAD"))
+          )
+          (port
+            (rename &INT2___FSYNC___CLKIN "INT2___FSYNC___CLKIN")
+            (designator "9")
+            (property (rename ORDER "Order") (string "8") (owner "OrCAD"))
+          )
+          (port
+            (rename &RESV_4 "RESV_4")
+            (designator "10")
+            (property (rename ORDER "Order") (string "9") (owner "OrCAD"))
+          )
+          (port
+            (rename &RESV_5 "RESV_5")
+            (designator "11")
+            (property (rename ORDER "Order") (string "10") (owner "OrCAD"))
+          )
+          (port
+            (rename &AP_CS "AP_CS")
+            (designator "12")
+            (property (rename ORDER "Order") (string "11") (owner "OrCAD"))
+          )
+          (port
+            (rename &AP_SCL___AP_SCLK "AP_SCL___AP_SCLK")
+            (designator "13")
+            (property (rename ORDER "Order") (string "12") (owner "OrCAD"))
+          )
+          (port
+            (rename &AP_SDA___AP_SDIO___AP_SDI "AP_SDA___AP_SDIO___AP_SDI")
+            (designator "14")
+            (property (rename ORDER "Order") (string "13") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &AP_SDO___AP_AD0 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -1500) (pt 0 -1500))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -1500))))
+            )
+            (portImplementation
+              (name &RESV_1 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -1600) (pt 0 -1600))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -1600))))
+            )
+            (portImplementation
+              (name &RESV_2 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -1700) (pt 0 -1700))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -1700))))
+            )
+            (portImplementation
+              (name &INT1___INT (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -1800) (pt 0 -1800))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -1800))))
+            )
+            (portImplementation
+              (name &VDDIO (display PINNAME))
+              (figure PIN (path (pointList (pt 1000 -2500) (pt 1000 -2300))))
+              (connectLocation (figure GRAPHIC (dot (pt 1000 -2500))))
+            )
+            (portImplementation
+              (name &GND (display PINNAME))
+              (figure PIN (path (pointList (pt 1100 -2500) (pt 1100 -2300))))
+              (connectLocation (figure GRAPHIC (dot (pt 1100 -2500))))
+            )
+            (portImplementation
+              (name &RESV_3 (display PINNAME))
+              (figure PIN (path (pointList (pt 1200 -2500) (pt 1200 -2300))))
+              (connectLocation (figure GRAPHIC (dot (pt 1200 -2500))))
+            )
+            (portImplementation
+              (name &VDD (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 2200 -1800) (pt 2400 -1800))))
+              (connectLocation (figure GRAPHIC (dot (pt 2400 -1800))))
+            )
+            (portImplementation
+              (name &INT2___FSYNC___CLKIN (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 2200 -1700) (pt 2400 -1700))))
+              (connectLocation (figure GRAPHIC (dot (pt 2400 -1700))))
+            )
+            (portImplementation
+              (name &RESV_4 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 2200 -1600) (pt 2400 -1600))))
+              (connectLocation (figure GRAPHIC (dot (pt 2400 -1600))))
+            )
+            (portImplementation
+              (name &RESV_5 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 2200 -1500) (pt 2400 -1500))))
+              (connectLocation (figure GRAPHIC (dot (pt 2400 -1500))))
+            )
+            (portImplementation
+              (name &AP_CS (display PINNAME))
+              (figure PIN (path (pointList (pt 1200 200) (pt 1200 0))))
+              (connectLocation (figure GRAPHIC (dot (pt 1200 200))))
+            )
+            (portImplementation
+              (name &AP_SCL___AP_SCLK (display PINNAME))
+              (figure PIN (path (pointList (pt 1100 200) (pt 1100 0))))
+              (connectLocation (figure GRAPHIC (dot (pt 1100 200))))
+            )
+            (portImplementation
+              (name &AP_SDA___AP_SDIO___AP_SDI (display PINNAME))
+              (figure PIN (path (pointList (pt 1000 200) (pt 1000 0))))
+              (connectLocation (figure GRAPHIC (dot (pt 1000 200))))
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 2200 0)
+                  (pt 2200 -2300)
+                  (pt 0 -2300)
+                  (pt 0 0)
+                )
+              )
+            )
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 2250 130))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 2250 30))))
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "ICM-42688-P"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-03-10-13:13:58)
+    (mountForm default
+        (footprintRef "IIM42352")
+        (spec "System")
+    )
+)
