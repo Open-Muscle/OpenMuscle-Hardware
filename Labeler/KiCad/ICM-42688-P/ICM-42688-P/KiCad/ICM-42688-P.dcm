@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ICM-42688-P
+D IMU (Inertial Measurement Unit), 6-Axis, Accelerometer, Gyroscope
+K
+F https://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/DS-000347-ICM-42688-P-v1.5.pdf
+$ENDCMP
+#
+#End Doc Library

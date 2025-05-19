@@ -490,7 +490,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "./",
-      "plot": "LASK5 PCB 2-1/",
+      "plot": "LASK5-V3 Gerber/",
       "pos_files": "",
       "specctra_dsn": "C:/Users/TTX/Downloads/LASK5.dsn",
       "step": "C:/Users/TTX/Downloads/LASK5.stl",
@@ -560,8 +560,50 @@
         },
         {
           "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "JLCPN",
           "name": "JLCPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         },
         {

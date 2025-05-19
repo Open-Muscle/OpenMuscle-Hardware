@@ -1,0 +1,221 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "ICM-42688-P"
+   (description "IMU (Inertial Measurement Unit), 6-Axis, Accelerometer, Gyroscope")
+   (family "ANA")
+   (package "IIM42352")
+   (attribute "Datasheet Link" "https://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/DS-000347-ICM-42688-P-v1.5.pdf")
+   (attribute "Mouser Part Number" "410-ICM-42688-P")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK-InvenSense/ICM-42688-P?qs=OlC7AqGiEDk8QrNAV728zw%3D%3D")
+   (attribute "Manufacturer_Name" "TDK")
+   (attribute "Manufacturer_Part_Number" "ICM-42688-P")
+   (gate
+    (symbol "ICM-42688-P")
+    (pin "AP_SDO_/_AP_AD0" 1 PS)
+    (pin "RESV_1" 2 PS)
+    (pin "RESV_2" 3 PS)
+    (pin "INT1_/_INT" 4 PS)
+    (pin "VDDIO" 5 PS)
+    (pin "GND" 6 PS)
+    (pin "RESV_3" 7 PS)
+    (pin "VDD" 8 PS)
+    (pin "INT2_/_FSYNC_/_CLKIN" 9 PS)
+    (pin "RESV_4" 10 PS)
+    (pin "RESV_5" 11 PS)
+    (pin "AP_CS" 12 PS)
+    (pin "AP_SCL_/_AP_SCLK" 13 PS)
+    (pin "AP_SDA_/_AP_SDIO_/_AP_SDI" 14 PS)
+   )
+  )
+  (symbol "ICM-42688-P"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 1500) (pt 2400 1500) (pt 2400 -800) (pt 200 -800) (pt 200 1500) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -1000) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 -1000) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -1000) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2600 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2600 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2600 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 2600 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 1700) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1300 1700) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 1700) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "IIM42352"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.5 1.25)
+      (pt 1.5 1.25)
+      (pt 1.5 -1.25)
+      (pt -1.5 -1.25)
+      (pt -1.5 1.25))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.7 2)
+      (pt 2.25 2)
+      (pt 2.25 -2)
+      (pt -2.7 -2)
+      (pt -2.7 2))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.5 1)
+      (pt -1.5 1.25)
+      (pt -0.8 1.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 0.8 1.25)
+      (pt 1.5 1.25)
+      (pt 1.5 1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.5 -1.1)
+      (pt -1.5 -1.25)
+      (pt -0.8 -1.25))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 0.8 -1.25)
+      (pt 1.5 -1.25)
+      (pt 1.5 -1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.9 0.8)
+      (arc (pt -1.900 0.800) (pt -1.950 0.700) (pt -1.850 0.800) (start 180.0) (sweep 90.0))
+      (pt -1.9 0.7)
+      (arc (pt -1.900 0.700) (pt -1.950 0.700) (pt -1.850 0.800) (start 180.0) (sweep -90.0))
+      (pt -1.9 0.8))))
+   (leg 1 (pt -1.150 0.750) (padstack 0))
+   (leg 2 (pt -1.150 0.250) (padstack 0))
+   (leg 3 (pt -1.150 -0.250) (padstack 0))
+   (leg 4 (pt -1.150 -0.750) (padstack 0))
+   (leg 5 (pt -0.500 -0.900) (padstack 5))
+   (leg 6 (pt 0.000 -0.900) (padstack 6))
+   (leg 7 (pt 0.500 -0.900) (padstack 7))
+   (leg 8 (pt 1.150 -0.750) (padstack 0))
+   (leg 9 (pt 1.150 -0.250) (padstack 0))
+   (leg 10 (pt 1.150 0.250) (padstack 0))
+   (leg 11 (pt 1.150 0.750) (padstack 0))
+   (leg 12 (pt 0.500 0.900) (padstack 12))
+   (leg 13 (pt 0.000 0.900) (padstack 13))
+   (leg 14 (pt -0.500 0.900) (padstack 14))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 0.000))
+   )
+   (padstack 5
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 90.000))
+   )
+   (padstack 6
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 90.000))
+   )
+   (padstack 7
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 90.000))
+   )
+   (padstack 12
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 90.000))
+   )
+   (padstack 13
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 90.000))
+   )
+   (padstack 14
+    (plated false)
+    (pad (layer TCOP) (rectf 0.300 0.600 0 0 90.000))
+   )
+   (model "ICM-42688-P.stp"
+    (euler 90 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

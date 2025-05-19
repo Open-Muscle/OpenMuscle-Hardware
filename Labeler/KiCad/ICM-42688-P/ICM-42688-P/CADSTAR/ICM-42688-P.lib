@@ -1,0 +1,16 @@
+.ICM-42688-P :1 ;IMU (Inertial Measurement Unit), 6-Axis, Accelerometer, Gyroscope
+IIM42352
+*STM IC
+*NGS
+*PLB 1="AP_SDO / AP_AD0" 2="RESV_1" 3="RESV_2" 4="INT1 / INT" 5="VDDIO" 6="GND" 7="RESV_3" 8="VDD" 9="INT2 / FSYNC / CLKIN" 10="RESV_4" 11="RESV_5" 12="AP_CS" 13="AP_SCL / AP_SCLK" 14="AP_SDA / AP_SDIO / AP_SDI"
+*MXP 14
+*DFN ICM-42688-P
+~!Mouser Part Number (410-ICM-42688-P)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/TDK-InvenSense/ICM-42688-P?qs=OlC7AqGiEDk8QrNAV728zw%3D%3D)
+~!Manufacturer_Name (TDK)
+~!Manufacturer_Part_Number (ICM-42688-P)
+~!Link Datasheet (https://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/DS-000347-ICM-42688-P-v1.5.pdf)
+~!Height (-)
+~!3D_Model (ICM-42688-P)
+ICM-42688-P
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 
